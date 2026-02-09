@@ -69,10 +69,10 @@
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
+        .logo img {
+            max-height: 50px;
+            width: auto;
+            display: block;
         }
 
         .nav-links {
@@ -343,7 +343,9 @@
 
     <header role="banner">
         <nav aria-label="Main Navigation">
-            <div class="logo">Atef Abrar</div>
+            <div class="logo">
+                <img src="images/uploaded-1.jpg" alt="Atef Abrar logo">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -356,17 +358,14 @@
 
     <main id="home">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
+        <section class="hero" style="justify-content: center; text-align: center;">
+            <div class="hero-content" style="text-align: center;">
                 <h1>Atef Abrar</h1>
-                <p>Building modern, high-performance web experiences with a focus on clean code and exceptional user interfaces. Specializing in frontend and full-stack development.</p>
+                <p style="margin-left: auto; margin-right: auto;">Building modern, high-performance web experiences with a focus on clean code and exceptional user interfaces. Specializing in frontend and full-stack development.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/uploaded-1.jpg" alt="Atef Abrar - Professional Web Developer" style="max-width: 100%; height: auto; object-fit: cover; min-height: 400px;">
             </div>
         </section>
 
